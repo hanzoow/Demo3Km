@@ -26,7 +26,12 @@ const ListProduct3kmStyle = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     backgroundColor: '#F05C61',
+    width:'100%'
   },
+  footer:{
+    width:'100%',
+    height:80
+  }
 });
 
 

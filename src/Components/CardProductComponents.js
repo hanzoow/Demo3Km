@@ -1,23 +1,24 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import {
   View,
   Text,
-  Image,
   StyleSheet,
   FlatList,
   Button,
   ActivityIndicator,
   TouchableOpacity,
   Dimensions,
+  Image,
 } from 'react-native';
 import {createAppContainer} from 'react-navigation';
+// import {Image} from 'react-native-elements';
 
 import {ScrollView} from 'react-native-gesture-handler';
 import CardProductStyle from './CardProductStyle';
 const imagesData = [];
 
 const deviceWidth = Dimensions.get('window').width;
-export default class CardProductComponents extends React.Component {
+export default class CardProductComponents extends React.PureComponent {
   constructor(props) {
     super(props);
     try {
@@ -29,7 +30,10 @@ export default class CardProductComponents extends React.Component {
 
     // console.log(widthDevice)
   }
-
+ 
+  // shouldComponentUpdate() {
+  //   return false;
+  // }
   render() {
     const solution = Dimensions.get('window');
     const widthDevice = solution.width;
@@ -54,7 +58,7 @@ export default class CardProductComponents extends React.Component {
                 <View>
                   <Image
                     style={{
-                      height: heightDevice / 4,
+                      height: heightDevice / 4.6,
                       width: '100%',
                       paddingTop: 20,
                     }}
@@ -70,7 +74,11 @@ export default class CardProductComponents extends React.Component {
                       {this.props.price}đ
                     </Text>
                     <Image
-                      style={{height: 20, width: 20, alignItems: 'flex-end'}}
+                      style={{
+                        height: 20,
+                        width: 20,
+                        alignItems: 'flex-end',
+                      }}
                       source={require('../../assets/heart.png')}
                     />
                   </View>

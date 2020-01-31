@@ -117,34 +117,9 @@ const LocalCss = StyleSheet.create({
   directionOfListProduct: {
     backgroundColor: 'green',
   },
-  backgroundColorFlatList: {
-    backgroundColor: 'rgba(213, 205, 205, 1)',
-  },
-  eachProduct: {
-    // display: 'flex',
-    flexDirection: 'column',
-    flex: 1,
-    backgroundColor: 'white',
+  
 
-    // alignItems: 'stretch',
-    // // flexWrap: 'wrap',
-    // marginBottom: 10,
-    width: 193,
-    height: 300,
-    marginRight: 10,
-    marginLeft: 5,
-    marginTop: 5,
-    marginBottom: 5,
-    borderRadius: 5,
-    overflow: 'hidden',
-  },
 
-  directionOfBottomInfo: {
-    flexDirection: 'column',
-    flex: 1,
-    paddingRight: 10,
-    paddingLeft: 10,
-  },
   flexImage: {
     flex: 1,
   },
@@ -165,18 +140,6 @@ const LocalCss = StyleSheet.create({
     paddingBottom: 30,
   },
   
-  directionOfBottomViewOfProduct: {
-    flexDirection: 'row',
-    flex: 1,
-    justifyContent: 'space-between',
-    alignItems: 'baseline',
-  },
-  priceTextStyle: {
-    color: 'red',
-    fontSize: 15,
-    fontWeight: 'bold',
-    paddingTop: 20,
-  },
 });
 
 export default LocalCss;
